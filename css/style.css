@@ -273,7 +273,6 @@ header {
 header .logo {
   border: 0.105rem solid rgba(0, 0, 0, 0.7);
   padding: 0 0.5rem;
-  border-radius: 0.5rem;
   overflow: hidden;
   width: 7rem;
   width: max-content;
@@ -629,13 +628,12 @@ header.hero-header .logo {
   place-items: center;
 }
 .hero .banner .logo-container {
-  border-right: 1px solid #0007;
-  border-left: 1px solid #0007;
   width: 100%;
   height: 100%;
   position: relative;
   display: grid;
   place-items: center;
+  isolation: isolate;
 }
 .hero .banner .logo-container .letter {
   font-size: 10rem;
@@ -649,9 +647,10 @@ header.hero-header .logo {
   line-height: 0;
   display: grid;
   place-items: center;
+  z-index: 1;
 }
 .hero .banner .logo-container .letter.letter-1 {
-  animation: letter-1 5s 2s forwards;
+  animation: letter-1 5s 5s forwards;
 }
 @keyframes letter-1 {
   0% {
@@ -663,7 +662,7 @@ header.hero-header .logo {
 }
 .hero .banner .logo-container .letter.letter-2 {
   z-index: 1;
-  animation: letter-2 5s 2s forwards;
+  animation: letter-2 5s 5s forwards;
 }
 @keyframes letter-2 {
   0% {
@@ -684,24 +683,110 @@ header.hero-header .logo {
   width: 1.5rem;
   border-radius: 50%;
   position: absolute;
-  cursor: pointer;
   bottom: 30%;
-  opacity: 0;
-  animation: dot 2.5s 5s forwards ease-in;
+  display: grid;
+  place-items: center;
+  z-index: 5;
+  animation: dot 2.5s 8s forwards ease-in;
+}
+.hero .banner .logo-container .dot a {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
 @keyframes dot {
-  0% {
-    opacity: 0;
-    transform: translateY(5rem);
-  }
   50% {
-    opacity: 1;
     transform: translateY(-2rem);
     animation-timing-function: ease-out;
   }
   100% {
-    opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.loader_bg {
+  position: fixed;
+  width: 100%;
+  padding: 10vh 5vw;
+  height: 100vh;
+  background: #fff;
+  z-index: 99;
+  display: grid;
+  place-items: center;
+}
+.loader_bg .logo-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+.loader_bg .logo-container .letter {
+  font-size: 10rem;
+  font-family: "Taviraj", serif;
+  isolation: isolate;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 10rem;
+  width: 10rem;
+  line-height: 0;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+}
+@keyframes letter-1 {
+  0% {
+    transform: translateY(-50%) translateX(0);
+  }
+  100% {
+    transform: translateY(-85%) translateX(-0.5rem);
+  }
+}
+.loader_bg .logo-container .letter.letter-2 {
+  z-index: 1;
+}
+@keyframes letter-2 {
+  0% {
+    transform: translateY(-50%) translateX(0);
+  }
+  80% {
+    transform: translateY(-50%) translateX(1.5rem);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-50%) translateX(1.5rem);
+    opacity: 1;
+  }
+}
+.loader_bg .logo-container .dot {
+  background: #000;
+  height: 1.5rem;
+  width: 5rem;
+  position: absolute;
+  cursor: pointer;
+  bottom: 30%;
+  z-index: 5;
+  animation: dot-loader 5s forwards ease-in;
+}
+@keyframes dot-loader {
+  0% {
+    opacity: 1;
+    width: 5rem;
+  }
+  50% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  90% {
+    border-radius: 50%;
+    width: 1.5rem;
+    opacity: 1;
+  }
+  100% {
+    border-radius: 50%;
+    width: 1.5rem;
   }
 }
 
