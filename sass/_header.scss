@@ -18,8 +18,8 @@ header {
     transition: .25s;
 
     .logo {
-        background: #000;
-        border: $border-light-sm;
+        // background: #000;
+        border: $border-dark-sm;
         padding: 0 .5rem;
         border-radius: $border-radius-sm;
         overflow: hidden;
@@ -33,6 +33,7 @@ header {
         }
         a {
             color: $span-gold;
+            color: $text-dark;
             text-transform: capitalize;
             font-size: 1.05rem;
             text-decoration: none;
@@ -342,7 +343,7 @@ header {
 
                 a {
                     font-family: $font-title;
-                    opacity: .7;
+                    // opacity: .7;
                     letter-spacing: .025rem;
                     color: $text-dark;
                     text-decoration: none;
@@ -380,9 +381,9 @@ header {
         // border: 2px solid $overlay-blue-dark;
         transform: translateY(0);
         transition: .5s;
-        background: $brand-dark;
-        border-radius: $border-radius-sm;
-        border: $border-brand-sm;
+        // background: $brand-dark;
+        // border-radius: $border-radius-sm;
+        // border: $border-dark-sm;
         text-align: center;
         transform: translateY(-10vh);
         transition: .5s;
@@ -391,17 +392,17 @@ header {
             height: 100%;
             // padding: .5rem 1rem;
             text-transform: capitalize;
-            color: $text-light;
+            color: $text-dark;
             text-decoration: none;
             border-radius: $border-radius-sm;
             font-weight: 500;
-            // border: 1px solid red;
+            border: $border-dark-sm;
             // letter-spacing: .025rem;
 
             i {
                 // padding-left: .5rem;
                 padding: .25rem 1rem;
-                opacity: .8;
+                // opacity: .8;
             }
         }
         @media (max-width: 820px){
@@ -413,8 +414,8 @@ header {
             a {
                 // padding: .25rem .5rem;
                 width: 100%;
-                font-size: .85rem;
-                color: $text-light;
+                font-size: 1rem;
+                // color: $text-light;
             }
         }
         // HOVER AND ACTIVE STATE
@@ -422,12 +423,13 @@ header {
                 // transform: scale(.98);
                 transition: .25s;
                 a {
+                background: #000;
                     letter-spacing: normal;
                     transition: .25s;
 
                     i {
                 transition: .25s;
-                color: $brand;
+                color: $text-light;
                     }
                 }
             }

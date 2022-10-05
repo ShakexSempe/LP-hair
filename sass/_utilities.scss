@@ -6,6 +6,7 @@
     }
     border: 1px solid $toggle;
     border-radius: $border-radius-sm;
+    background: #000;
     // height: auto;
     width: 4rem;
     display: grid;
@@ -19,6 +20,7 @@
         font-size: .85rem;
         font-weight: 500;
         transition: .25s;
+        color: $text-light;
     }
     // ACTIVE CLASS
     &.active {

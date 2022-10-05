@@ -5,12 +5,77 @@
     background: $background-secondary;
 
     .banner {
-        // border: 1px solid red;
+        // border: 2px solid red;
         height: 100vh;
-        background-image: url(../img/lp-logo.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
+        width: 100%;
+        position: relative;
+        padding: 10vh 5vw;
+        display: grid;
+        place-items: center;
+
+        .logo-container {
+            border-right: 1px solid #0007;
+            border-left: 1px solid #0007;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: grid;
+            place-items: center;
+            
+            .letter {
+                font-size: 10rem;
+                font-family: $font-title;
+                isolation: isolate;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 10rem;
+                width: 10rem;
+                // border: 1px solid blue;
+                line-height: 0;
+                display: grid;
+                place-items: center;
+                
+                &.letter-1 {
+                    // left: -.25rem;
+                    // transform: translateY(-85%) translateX(-.5rem);
+                    animation: letter-1 10s 3s forwards;
+
+                    @keyframes letter-1 {
+                        0% {
+                            transform: translateY(-50%) translateX(0);
+                        }
+                        100% {
+                            transform: translateY(-85%) translateX(-.5rem);
+                        }
+                    }
+                }
+                &.letter-2 {
+                    // color: #0009;
+                    // transform: translateY(-50%) translateX(1.5rem);
+                    z-index: 1;
+                    animation: letter-2 10s 3s forwards;
+                    @keyframes letter-2 {
+                        0% {
+                            transform: translateY(-50%) translateX(0);
+                        }
+                        100% {
+                            transform: translateY(-50%) translateX(1.5rem);
+                            opacity: .7;
+
+                        }
+                    }
+                }
+            }
+            .dot {
+                background: #000;
+                height: 1rem;
+                width: 1rem;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 35%;
+            }
+        }
     }
 
 }
