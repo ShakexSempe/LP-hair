@@ -19,7 +19,7 @@ header {
 
     .logo {
         // background: #000;
-        border: $border-dark-sm;
+        // border: $border-dark-sm;
         padding: 0 .5rem;
         overflow: hidden;
         width: 7rem;
@@ -393,7 +393,7 @@ header {
             text-transform: capitalize;
             color: $text-dark;
             text-decoration: none;
-            border-radius: $border-radius-sm;
+            // border-radius: $border-radius-sm;
             font-weight: 500;
             border: $border-dark-sm;
             // letter-spacing: .025rem;
@@ -456,7 +456,7 @@ header {
         // background: transparent;
         // background: #000;
         .logo {
-            border: $border-light-sm;
+            // border: $border-light-sm;
         }
     } 
 }

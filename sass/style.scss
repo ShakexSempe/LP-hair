@@ -59,30 +59,31 @@ body {
     main {
         min-height: 100vh;
         width: 100%;
-        border: 2px solid white;
+        // border: 2px solid white;
         border: none;
 
         section {
             min-height: 100vh;
             width: 100%;
-            padding: 7vh 5vw;
+            padding: 10vh 5vw;
             background: $background-secondary;
             // border-bottom: .15rem dashed rgba(0, 0, 0, 0.247);
             position: relative;
+            border: none;
+            overflow: hidden;
 
             .section-title {
-                // position: sticky;
+                position: relative;
                 // top: 8vh;
-                overflow: hidden;
+                // overflow: hidden;
 
                 // background: #fff;
                 @include md {
                     top: 9vh;
                 }
                 h1 {
-                    border: $border-dark-sm;
-                    border-color: transparent;
-                    border-radius: $border-radius-sm;
+                    // border: $border-dark-sm;
+                    // border-color: transparent;
                     text-transform: capitalize;
                     font-family: $font-title;
                     font-size: 2rem;
@@ -99,10 +100,45 @@ body {
                     }
                 }
 
+                // DECORATION LINES
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 30vw;
+                    height: .15rem;
+                    background: #000;
+                    opacity: 0;
+                    transition: 1s;
+                    transform: translateX(50%);
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: .15rem;
+                    height: 15vh;
+                    background: #000;
+                    opacity: 0;
+                    transition: 1s;
+                    transform: translateY(50%);
+                }
+
                 &.active-title {
                     h1 {
                         opacity: .6;
                     }
+
+                    &::before {
+                    transform: translateX(5vw);
+                    opacity: .2;
+                    }
+                    &::after {
+                        transform: translateY(-10vh);
+                        opacity: .2;
+                        }
                 }
             }
         }
