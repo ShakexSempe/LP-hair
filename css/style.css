@@ -613,7 +613,7 @@ header.aside-header .logo {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: #fafafa;
+  background: linear-gradient(90deg, #fafafa 100%, #fff 0%);
 }
 .hero .banner {
   height: 100vh;
@@ -622,6 +622,7 @@ header.aside-header .logo {
   padding: 10vh 5vw;
   display: grid;
   place-items: center;
+  isolation: isolate;
 }
 .hero .banner .logo-container {
   width: 100%;
@@ -1540,7 +1541,7 @@ body a, body span {
   min-height: 100vh;
   width: 100%;
   padding: 10vh 5vw;
-  background: #fafafa;
+  background: linear-gradient(90deg, #fafafa 100%, #fff 0%);
   position: relative;
   border: none;
   overflow: hidden;
