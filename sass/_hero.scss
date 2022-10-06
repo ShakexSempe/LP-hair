@@ -38,8 +38,8 @@
                 z-index: 1;
                 &.letter-1 {
                     // left: -.25rem;
-                    // transform: translateY(-85%) translateX(-.5rem);
-                    animation: letter-1 5s 5s forwards;
+                    transform: translateY(-85%) translateX(-.5rem);
+                    // animation: letter-1 5s 5s forwards;
 
                     @keyframes letter-1 {
                         0% {
@@ -52,9 +52,9 @@
                 }
                 &.letter-2 {
                     // color: #0009;
-                    // transform: translateY(-50%) translateX(1.5rem);
+                    transform: translateY(-50%) translateX(1.5rem);
                     z-index: 1;
-                    animation: letter-2 5s 5s forwards;
+                    // animation: letter-2 5s 5s forwards;
                     @keyframes letter-2 {
                         0% {
                             transform: translateY(-50%) translateX(0);
@@ -81,7 +81,7 @@
                 place-items: center;
                 // opacity: 0;
                 z-index: 5;
-                animation: dot 2.5s 8s forwards ease-in;
+                // animation: dot 2.5s 8s forwards ease-in;
                 
                 a {
                     cursor: pointer;
@@ -145,7 +145,7 @@
             &.letter-1 {
                 // left: -.25rem;
                 // transform: translateY(-85%) translateX(-.5rem);
-                // animation: letter-1 5s 2s forwards;
+                animation: letter-1 5s forwards;
 
                 @keyframes letter-1 {
                     0% {
@@ -160,7 +160,7 @@
                 // color: #0009;
                 // transform: translateY(-50%) translateX(1.5rem);
                 z-index: 1;
-                // animation: letter-2 5s 2s forwards;
+                animation: letter-2 5s forwards;
                 @keyframes letter-2 {
                     0% {
                         transform: translateY(-50%) translateX(0);

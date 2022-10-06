@@ -643,7 +643,7 @@ header.aside-header .logo {
   z-index: 1;
 }
 .hero .banner .logo-container .letter.letter-1 {
-  animation: letter-1 5s 5s forwards;
+  transform: translateY(-85%) translateX(-0.5rem);
 }
 @keyframes letter-1 {
   0% {
@@ -654,8 +654,8 @@ header.aside-header .logo {
   }
 }
 .hero .banner .logo-container .letter.letter-2 {
+  transform: translateY(-50%) translateX(1.5rem);
   z-index: 1;
-  animation: letter-2 5s 5s forwards;
 }
 @keyframes letter-2 {
   0% {
@@ -680,7 +680,6 @@ header.aside-header .logo {
   display: grid;
   place-items: center;
   z-index: 5;
-  animation: dot 2.5s 8s forwards ease-in;
 }
 .hero .banner .logo-container .dot a {
   cursor: pointer;
@@ -729,6 +728,9 @@ header.aside-header .logo {
   place-items: center;
   z-index: 1;
 }
+.loader_bg .logo-container .letter.letter-1 {
+  animation: letter-1 5s forwards;
+}
 @keyframes letter-1 {
   0% {
     transform: translateY(-50%) translateX(0);
@@ -739,6 +741,7 @@ header.aside-header .logo {
 }
 .loader_bg .logo-container .letter.letter-2 {
   z-index: 1;
+  animation: letter-2 5s forwards;
 }
 @keyframes letter-2 {
   0% {
