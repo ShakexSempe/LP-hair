@@ -54,6 +54,7 @@ const heroObserver = new IntersectionObserver(
 heroObserver.observe(hero);
 
 // SECTION TITLE INTERSECTION OBSERVERS
+// const topLine = document.querySelector(".decoration-line");
 const titles = document.querySelectorAll(".section-title");
 const titlesOptions = {
     rootMargin: '00% 0px -50% 0px',
@@ -66,9 +67,12 @@ titles.forEach(title => {
                 if(!entry.isIntersecting) {
                     console.log("title NOT io");
                     title.classList.remove("active-title");
+                    // topLine.classList.add('active-line');
                 } else {
                     console.log("title is io");
                     title.classList.add("active-title");
+                    // topLine.classList.remove('active-line');
+
                 }
             });
         }, titlesOptions

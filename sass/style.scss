@@ -50,6 +50,22 @@ body {
         background: #000a;
     }
 
+    // DECORATION LINES
+    // .decoration-line {
+    //     position: fixed;
+    //     top: 10vh;
+    //     z-index: 1;
+    //     right: 0;
+    //     width: 40vw;
+    //     height: .2rem;
+    //     background: #000;
+    //     transition: 1s;
+
+    //     &.active-line {
+    //         transform: translateX(60vw);
+    //     }
+    // }
+
     // ACTIVE SIDEBAR CLASS
     &.active-container {
         &::after {
