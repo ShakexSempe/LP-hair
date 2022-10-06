@@ -620,6 +620,7 @@ header.aside-header .logo {
   width: 100%;
   position: relative;
   padding: 10vh 5vw;
+  padding: 0 5vw;
   display: grid;
   place-items: center;
   isolation: isolate;
@@ -693,11 +694,11 @@ header.aside-header .logo {
 }
 .hero .banner .logo-container .dot {
   background: #000;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.25rem;
+  width: 1.25rem;
   border-radius: 50%;
   position: absolute;
-  bottom: 33%;
+  bottom: 35%;
   display: grid;
   place-items: center;
   z-index: 5;
@@ -716,15 +717,13 @@ header.aside-header .logo {
   }
 }
 .hero .banner .slogan {
-  border: 1px solid #000;
   position: absolute;
-  bottom: 18vh;
-  text-align: center;
-  background: #fafafa;
+  bottom: 10vh;
   text-transform: capitalize;
 }
 .hero .banner .slogan h1 {
-  padding: 0.5rem;
+  background: #fafafa;
+  padding: 0.25rem;
   font-family: "Taviraj", serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -732,8 +731,26 @@ header.aside-header .logo {
 }
 .hero .banner .slogan p {
   padding: 0.5rem;
+  background: #fafafa;
+  color: #000;
+}
+.hero .banner .slogan .cta {
   background: #000;
-  color: #fafafa;
+  margin: 0.5rem 0;
+  width: 50%;
+}
+.hero .banner .slogan .cta a {
+  display: block;
+  font-size: 1rem;
+  padding: 1rem 0.5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  color: #ead2a1;
+}
+.hero .banner .slogan .cta a i {
+  padding-left: 0.5rem;
 }
 
 .loader_bg {
