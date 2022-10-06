@@ -655,7 +655,7 @@ header.aside-header .logo {
   font-family: "Taviraj", serif;
   isolation: isolate;
   position: absolute;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   height: 10rem;
   width: 10rem;
@@ -694,11 +694,11 @@ header.aside-header .logo {
 }
 .hero .banner .logo-container .dot {
   background: #000;
-  height: 1.25rem;
-  width: 1.25rem;
+  height: 1.15rem;
+  width: 1.15rem;
   border-radius: 50%;
   position: absolute;
-  bottom: 35%;
+  bottom: 40%;
   display: grid;
   place-items: center;
   z-index: 5;
@@ -758,6 +758,7 @@ header.aside-header .logo {
   position: fixed;
   width: 100%;
   padding: 10vh 5vw;
+  padding: 0 5vw;
   height: 100vh;
   background: #fff;
   z-index: 99;
@@ -777,7 +778,7 @@ header.aside-header .logo {
   font-family: "Taviraj", serif;
   isolation: isolate;
   position: absolute;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   height: 10rem;
   width: 10rem;
@@ -816,11 +817,11 @@ header.aside-header .logo {
 }
 .loader_bg .logo-container .dot {
   background: #000;
-  height: 1.5rem;
+  height: 1.15rem;
   width: 5rem;
   position: absolute;
   cursor: pointer;
-  bottom: 33%;
+  bottom: 40%;
   z-index: 5;
   animation: dot-loader 5s forwards ease-in;
 }
@@ -835,12 +836,12 @@ header.aside-header .logo {
   }
   90% {
     border-radius: 50%;
-    width: 1.5rem;
+    width: 1.15rem;
     opacity: 1;
   }
   100% {
     border-radius: 50%;
-    width: 1.5rem;
+    width: 1.15rem;
   }
 }
 
