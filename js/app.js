@@ -32,7 +32,7 @@ links.forEach(link => {
 // HERO INTERSECTION OBSERVER
 const hero = document.querySelector('.hero');
 const heroOptions = {
-    rootMargin: '-20% 0px 0px 0px',
+    rootMargin: '-90% 0px 0px 0px',
 }
 const heroObserver = new IntersectionObserver(
     function( entries, heroObserver) {
