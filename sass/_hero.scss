@@ -124,7 +124,7 @@
             // border: 1px solid black;
             padding: .5rem;
             position: absolute;
-            bottom: 18vh;
+            bottom: 15vh;
             text-align: center;
             background: #fff7;
 
@@ -133,6 +133,7 @@
                 font-family: $font-title;
                 font-size: 1.5rem;
                 font-weight: 400;
+                line-height: 1.5;
             }
         }
     }
