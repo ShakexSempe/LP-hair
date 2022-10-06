@@ -712,17 +712,21 @@ header.aside-header .logo {
   50% {
     transform: scale(1.2);
     animation-timing-function: ease-out;
+    opacity: 0.7;
   }
 }
 .hero .banner .slogan {
+  padding: 0.5rem;
   position: absolute;
-  bottom: 20vh;
+  bottom: 18vh;
   text-align: center;
+  background: #fff7;
 }
 .hero .banner .slogan h1 {
   text-transform: capitalize;
   font-family: "Taviraj", serif;
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .loader_bg {

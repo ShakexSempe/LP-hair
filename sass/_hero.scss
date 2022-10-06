@@ -13,6 +13,7 @@
         display: grid;
         place-items: center;
         isolation: isolate;
+        // background: linear-gradient(0deg, transparent 60%, #fafafa);
         // OVERLAY 
         &::after {
             content: '';
@@ -113,6 +114,7 @@
                     50% {
                         transform: scale(1.2);
                         animation-timing-function: ease-out;
+                        opacity: .7;
                     }
                 }
             }
@@ -120,14 +122,17 @@
 
         .slogan {
             // border: 1px solid black;
+            padding: .5rem;
             position: absolute;
-            bottom: 20vh;
+            bottom: 18vh;
             text-align: center;
+            background: #fff7;
 
             h1 {
                 text-transform: capitalize;
                 font-family: $font-title;
                 font-size: 1.5rem;
+                font-weight: 400;
             }
         }
     }
