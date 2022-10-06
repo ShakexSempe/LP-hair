@@ -148,17 +148,17 @@
             .cta {
                 background: #000;
                 margin: .5rem 0;
-                width: 50%;
+                width: 60%;
                 a {
                     // border: 1px solid red;
                     display: block;
                     font-size: 1rem;
-                    padding: 1rem .5rem;
+                    padding: 1rem 1rem 1rem .5rem;
                     text-decoration: none;
                     text-transform: capitalize;
                     display: flex;
                     align-items: center;
-                    // justify-content: center;
+                    justify-content: space-between;
                     color: $brand-gold;
                     i {
                         padding-left: .5rem;
@@ -242,12 +242,14 @@
             background: #000;
             height: 1.15rem;
             width: 5rem;
+            border-radius: 50%;
+            width: 1.15rem;
             position: absolute;
             cursor: pointer;
             bottom: 40%;
             // opacity: 0;
             z-index: 5;
-            animation: dot-loader 5s forwards ease-in;
+            // animation: dot-loader 5s forwards ease-in;
             @keyframes dot-loader {
                 0% {
                     opacity: 1;

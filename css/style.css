@@ -738,16 +738,17 @@ header.aside-header .logo {
 .hero .banner .slogan .cta {
   background: #000;
   margin: 0.5rem 0;
-  width: 50%;
+  width: 60%;
 }
 .hero .banner .slogan .cta a {
   display: block;
   font-size: 1rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1rem 1rem 0.5rem;
   text-decoration: none;
   text-transform: capitalize;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: #ead2a1;
 }
 .hero .banner .slogan .cta a i {
@@ -819,11 +820,12 @@ header.aside-header .logo {
   background: #000;
   height: 1.15rem;
   width: 5rem;
+  border-radius: 50%;
+  width: 1.15rem;
   position: absolute;
   cursor: pointer;
   bottom: 40%;
   z-index: 5;
-  animation: dot-loader 5s forwards ease-in;
 }
 @keyframes dot-loader {
   0% {
@@ -1612,25 +1614,22 @@ body a, body span {
 .container main section .section-title h1 {
   text-transform: capitalize;
   font-family: "Taviraj", serif;
-  font-size: 2rem;
-  font-size: 3rem;
+  font-size: 1.25rem;
   color: #000;
   font-weight: 600;
   padding: 0 0.5rem;
-  width: 7rem;
   width: max-content;
   transition: 0.5s;
 }
 @media (min-width: 576px) {
   .container main section .section-title h1 {
-    width: 10rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 .container main section .section-title::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 7vh;
   right: 0;
   width: 30vw;
   height: 0.15rem;
@@ -1645,7 +1644,7 @@ body a, body span {
   top: 0;
   right: 0;
   width: 0.15rem;
-  height: 15vh;
+  height: 35vh;
   background: #000;
   opacity: 0;
   transition: 1s;
