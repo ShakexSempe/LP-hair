@@ -132,7 +132,7 @@ header {
                             // width: 3rem;
                             // border: 1px solid yellow;
                             transition: .25s;
-                            color: $brand;
+                            // color: $brand;
                         }
                     }
 
@@ -140,13 +140,14 @@ header {
                         height: 0vh;
                         transition: .5s;
                         display: flex;
-                        flex-direction: column;;
+                        flex-direction: column;
+                        gap: .5rem;
                         padding: 1rem .5rem .25rem;
 
                         a {
                             text-transform: capitalize;
                             text-decoration: none;
-                            color: $brand;
+                            color: $text-light;
                             margin-left: 1rem;
                             padding: .5rem  .25rem;
                             border-radius: $border-radius-sm;
@@ -162,6 +163,7 @@ header {
                         border-radius: $border-radius-sm;
                         transition: border .5s;
                         button {
+                            color: $brand;
                             i {
                                 opacity: .5;
                                 transform: rotate(180deg);
@@ -208,13 +210,13 @@ header {
                 letter-spacing: .025rem;
                 opacity: 0;
                 transition: 1s;
-
+                
                 i {
                     // padding-right: .5rem;
+                    color: $text-light;
                     width: 1.5rem;
                     font-size: 1.25em;
                     padding-bottom: .25rem;
-                    color: $text-light;
                     transform: translateX(-1rem);
                     // opacity: 0;
                     transition: .5s;

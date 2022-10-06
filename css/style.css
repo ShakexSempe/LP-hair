@@ -366,19 +366,19 @@ header aside ul li.aside-dropdown button {
 }
 header aside ul li.aside-dropdown button i {
   transition: 0.25s;
-  color: #fff9;
 }
 header aside ul li.aside-dropdown .dropdown-content {
   height: 0vh;
   transition: 0.5s;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
   padding: 1rem 0.5rem 0.25rem;
 }
 header aside ul li.aside-dropdown .dropdown-content a {
   text-transform: capitalize;
   text-decoration: none;
-  color: #fff9;
+  color: #fafafa;
   margin-left: 1rem;
   padding: 0.5rem 0.25rem;
   border-radius: 0.5rem;
@@ -391,6 +391,9 @@ header aside ul li.aside-dropdown:hover {
   border-radius: 0;
   border-radius: 0.5rem;
   transition: border 0.5s;
+}
+header aside ul li.aside-dropdown:hover button {
+  color: #fff9;
 }
 header aside ul li.aside-dropdown:hover button i {
   opacity: 0.5;
@@ -433,10 +436,10 @@ header aside .contact-links a {
   transition: 1s;
 }
 header aside .contact-links a i {
+  color: #fafafa;
   width: 1.5rem;
   font-size: 1.25em;
   padding-bottom: 0.25rem;
-  color: #fafafa;
   transform: translateX(-1rem);
   transition: 0.5s;
   display: block;
