@@ -41,12 +41,12 @@ const heroObserver = new IntersectionObserver(
                 console.log("Her NOT io");
                 header.classList.remove('hero-header');
                 footerNav.classList.add('active-footer');
-                headerCta.classList.add('active-cta');
+                // headerCta.classList.add('active-cta');
             } else {
                 console.log("hero IS io");
                 header.classList.add('hero-header');
                 footerNav.classList.remove('active-footer');
-                headerCta.classList.remove('active-cta');
+                // headerCta.classList.remove('active-cta');
             }
         });
     }, heroOptions

@@ -94,7 +94,7 @@
   }
   .btn:hover i::before, .btn:hover i::after {
     animation: none;
-    color: #ead2a1;
+    color: #fff9;
   }
 }
 
@@ -147,7 +147,7 @@
   transition: 1s;
 }
 .home-button .top-btn {
-  color: #ead2a1;
+  color: #fff9;
   font-size: 1.05rem;
   padding: 0.25rem 0.5rem;
   transition: 0.25s;
@@ -338,11 +338,11 @@ header aside ul li a {
 header aside ul li a i {
   float: right;
   margin: 0 auto;
-  color: #ead2a1;
+  color: #fff9;
 }
 header aside ul li.aside-dropdown {
   border: none;
-  border-bottom: 1px solid #ead2a1;
+  border-bottom: 1px solid #fff7;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -366,7 +366,7 @@ header aside ul li.aside-dropdown button {
 }
 header aside ul li.aside-dropdown button i {
   transition: 0.25s;
-  color: #ead2a1;
+  color: #fff9;
 }
 header aside ul li.aside-dropdown .dropdown-content {
   height: 0vh;
@@ -378,7 +378,7 @@ header aside ul li.aside-dropdown .dropdown-content {
 header aside ul li.aside-dropdown .dropdown-content a {
   text-transform: capitalize;
   text-decoration: none;
-  color: #ead2a1;
+  color: #fff9;
   margin-left: 1rem;
   padding: 0.5rem 0.25rem;
   border-radius: 0.5rem;
@@ -425,7 +425,7 @@ header aside .contact-links {
   gap: 1.5rem;
 }
 header aside .contact-links a {
-  color: #ead2a1;
+  color: #fff9;
   font-size: 1rem;
   text-decoration: none;
   letter-spacing: 0.025rem;
@@ -544,7 +544,7 @@ header .navbar ul li a::after {
   width: 25%;
   opacity: 0;
   height: 0.1rem;
-  background-color: #ead2a1;
+  background-color: #fff9;
   transform: translateX(-50%);
   transition: 0.25s;
 }
@@ -821,7 +821,7 @@ header.aside-header .logo {
   position: absolute;
   left: -0.5em;
   bottom: 1em;
-  background-image: radial-gradient(circle at top, #ead2a1, 50%, #000);
+  background-image: radial-gradient(circle at top, #fff9, 50%, #000);
   animation: scene 30s infinite linear reverse;
 }
 @keyframes ball-bounce {
@@ -886,11 +886,11 @@ header.aside-header .logo {
   background: linear-gradient(0deg, #0a0c0f 30%, #29323c);
 }
 .cube .front p {
-  color: #ead2a1;
+  color: #fff9;
 }
 .cube .right {
   transform: rotateY(90deg) translateZ(1em);
-  background-color: #ead2a1;
+  background-color: #fff9;
 }
 .cube .right p {
   color: #29323c;
@@ -904,7 +904,7 @@ header.aside-header .logo {
 }
 .cube .left {
   transform: rotateY(270deg) translateZ(1em);
-  background-color: #ead2a1;
+  background-color: #fff9;
 }
 .cube .left p {
   color: #29323c;
@@ -1402,7 +1402,7 @@ header.aside-header .logo {
   font-weight: 600;
 }
 .about .about-article p.article-intro::first-letter {
-  color: #ead2a1;
+  color: #fff9;
   font-family: "Taviraj", serif;
   font-size: 2rem;
   float: left;
@@ -1507,7 +1507,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 body a, body span {
-  color: #ead2a1;
+  color: #fff9;
 }
 
 .container {

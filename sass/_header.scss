@@ -105,7 +105,7 @@ header {
                 &.aside-dropdown {
                     // border: 1px solid blue;
                     border: none;
-                    border-bottom: 1px solid $brand;
+                    border-bottom: 1px solid #fff7;
                     // padding: 0 0 0rem 0;
                     position: relative;
                     display: flex;
@@ -202,7 +202,7 @@ header {
             gap: 1.5rem;
 
             a {
-                color: $span-gold;
+                color: $brand;
                 font-size: 1rem;
                 text-decoration: none;
                 letter-spacing: .025rem;
