@@ -721,6 +721,7 @@ header.aside-header .logo {
 }
 .hero .banner .slogan h1 {
   text-transform: capitalize;
+  font-family: "Taviraj", serif;
   font-size: 1.5rem;
 }
 
