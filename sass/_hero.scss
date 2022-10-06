@@ -30,7 +30,7 @@
             opacity: 1;
             mix-blend-mode: overlay;
             z-index: -1;
-            opacity: .4;
+            opacity: .5;
         }
 
         .logo-container {
@@ -97,7 +97,7 @@
                 width: 1.5rem;
                 border-radius: 50%;
                 position: absolute;
-                bottom: 30%;
+                bottom: 33%;
                 display: grid;
                 place-items: center;
                 // opacity: 0;
@@ -121,19 +121,26 @@
         }
 
         .slogan {
-            // border: 1px solid black;
-            padding: .5rem;
+            border: 1px solid #000;
             position: absolute;
-            bottom: 15vh;
+            bottom: 18vh;
             text-align: center;
-            background: #fff7;
-
+            background: #fafafa;
+            text-transform: capitalize;
+            
             h1 {
-                text-transform: capitalize;
+                padding: .5rem;
+                // border: 1px solid red;
                 font-family: $font-title;
                 font-size: 1.5rem;
                 font-weight: 400;
                 line-height: 1.5;
+            }
+
+            p {
+                padding: .5rem;
+                background: #000;
+                color: $text-light;
             }
         }
     }
@@ -213,7 +220,7 @@
             width: 5rem;
             position: absolute;
             cursor: pointer;
-            bottom: 30%;
+            bottom: 33%;
             // opacity: 0;
             z-index: 5;
             animation: dot-loader 5s forwards ease-in;
