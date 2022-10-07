@@ -126,7 +126,10 @@
             bottom: 10vh;
             // text-align: center;
             text-transform: capitalize;
-            
+            @include md {
+                // left: 10vw;
+                // bottom: 40vh;
+            }
             h1 {
                 background: #fafafa;
                 // border: 1px solid #000;
@@ -146,9 +149,7 @@
             }
 
             .cta {
-                background: #000;
                 margin: .5rem 0;
-                width: 60%;
                 a {
                     // border: 1px solid red;
                     display: block;
