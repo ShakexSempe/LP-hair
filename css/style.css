@@ -1635,7 +1635,6 @@ body a, body span {
   background: #000;
 }
 .container .section-pad {
-  border: 1px solid #3f369f;
   width: 100%;
   min-height: 95vh;
   padding: 5vh 5vw;
