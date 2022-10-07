@@ -1,203 +1,35 @@
-.services {
-    * {
-        // border: 1px solid #000a;
-
+.section-flex-container {
+    // border: 2px solid blue;
+    margin: 7vh 0;
+    display: flex;
+    flex-direction: column;
+    @include md {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 5vh 5vw;
     }
-    .services-container {
-        // border: 2px solid blue;
 
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+    h2 {
+        font-size: 1rem;
+        text-transform: capitalize;
+        opacity: .8;
         @include md {
-            flex-direction: row;
+            font-size: 1.5rem;
         }
+    }
 
-        .service-item {
-            // border: 1px solid red;
-            // background: #f4f4f4;
-            // border-bottom: 2px solid $overlay-blue-light;
-            position: relative;
-            flex-basis: 50%;
-            margin: 1rem 0;
-            color: $overlay-blue-dark;
-            @include md {
-                background:linear-gradient(0deg, #f4f4f4, #fff);
-                border-radius: $border-radius-md;
-                border: 1px solid rgba(72, 85, 99, .15);
-                box-shadow: 0rem .25rem .35rem rgba(72, 85, 99, .15);
-                padding: .5rem;
-                text-align: center;
-            }
+    ul {
+        // border: 1px solid red;
+        margin: 1rem 0;
+        li {
+            list-style: none;
+            margin-bottom: .5rem;
 
-            .service-header {
-                .service-logo {
-                    margin-bottom: .5rem;
-                    // border: 1px solid green;
-                    width: 5rem;
-                    height: 5rem;
-                    overflow: hidden;
-                    @include md {
-                        margin: 1rem auto;
-                    }
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                .service-title {
-                    // border: 1px solid #000a;
-                    font-family: $font-title;
-
-                    h2 {
-                        text-transform: capitalize;
-                        font-size: 1.5rem;
-                        line-height: 1.2;
-                        margin: 1rem 0 0;
-                    }
-
-                    p {
-                        color: $overlay-blue-light;
-                    }
-
-                }
-            }
-
-            .service-content {
-                .service-description {
-                    margin: 1rem 0;
-                    font-size: 1rem;
-                    line-height: 1.5;
-                    font-weight: 500;
-                    color: #fff;
-                    background: $overlay-blue-dark;
-                    padding: .5rem;
-                    border-radius: $border-radius-sm;
-                    height: auto;
-
-                    // INCLUDE HEIGHT TO LEVEL UL
-                    @include md {
-                        height: 20vh;
-                        display: grid;
-                        place-items: center;
-                    }
-                    @include xlg {
-                        height: 15vh;
-                    }
-                }
-
-                ol {
-                    margin: .5rem;
-                    // border: 2px solid yellow;
-                    // background: $overlay-blue-dark;
-                    padding: 0 .5rem;
-                    text-align: left;
-
-                    li {
-                        padding: .5rem;
-                        border-radius: $border-radius-sm;
-                        // color: #f4f4f4;
-                        &::marker {
-                            color: #000a;
-                        }
-                        // &:nth-child(odd) {
-                        //     background-color: rgba(72, 85, 99, 0.050);
-                        // }
-
-                        h3 {
-                            text-transform: capitalize;
-                            margin-bottom: .25em;
-                            font-size: 1.05rem;
-                        }
-                        // CAP AND FULL STOP
-                        p {
-                            margin-bottom: .25rem;
-                            line-height: 1.5;
-                            &::first-letter{
-                                text-transform: capitalize;
-                            }
-                            &::after {
-                                content: '.';
-                            }
-                            span {
-                                font-weight: 500;
-                            }
-                            a {
-                                color: inherit;
-                            }
-                        }
-                    }
-                }
-            }
-
-            // IO CLASS 
-            &.io-item {
-                .service-logo {
-                    transform: translateX(1rem);
-                    opacity: 0;
-                    transition: 1s;
-                }
-                .service-title {
-                    h2 {
-                        opacity: 0;
-                        transform: translateX(1rem);
-                        transition: 1s;
-                        transition-delay: .5s;
-                    }
-                    p {
-                        transform: translateX(1.25rem);
-                        opacity: 0;
-                        transition: 1s;
-                        transition-delay: .8s;
-                    }
-
-                }
-                .service-content {
-                    p {
-                        opacity: 0;
-                        transition: 1.5s;
-                        transition-delay: 1s;
-                    }
-
-                    ol {
-                        li {
-                            transform: translateX(1.5rem);
-                            opacity: 0;
-                            
-                        }
-                    }
-                }
-            }
-
-            &.active-item {
-                .service-logo {
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-                .service-title {
-                    h2 {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-                    p {
-                        transform: translateX(0);
-                        opacity: 1;
-                    }
-                }
-                .service-content {
-                    p {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-
-                    ol {
-                        li {
-                            transform: translateX(0);
-                            opacity: 1;
-                            transition: 1s;
-                            transition-delay: calc(1s + .25s * var(--i));
-                        }
-                    }
+            p {
+                span {
+                    color: $text-dark; 
+                    // border: 1px solid red;
+                    padding-right: .5rem;
                 }
             }
         }

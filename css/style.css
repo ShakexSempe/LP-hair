@@ -1007,161 +1007,38 @@ header.aside-header .logo {
   background-size: 100%, 1em 1em;
 }
 
-.services .services-container {
+.section-flex-container {
+  margin: 7vh 0;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 @media (min-width: 768px) {
-  .services .services-container {
+  .section-flex-container {
     flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5vh 5vw;
   }
 }
-.services .services-container .service-item {
-  position: relative;
-  flex-basis: 50%;
-  margin: 1rem 0;
-  color: #29323c;
-}
-@media (min-width: 768px) {
-  .services .services-container .service-item {
-    background: linear-gradient(0deg, #f4f4f4, #fff);
-    border-radius: 1rem;
-    border: 1px solid rgba(72, 85, 99, 0.15);
-    box-shadow: 0rem 0.25rem 0.35rem rgba(72, 85, 99, 0.15);
-    padding: 0.5rem;
-    text-align: center;
-  }
-}
-.services .services-container .service-item .service-header .service-logo {
-  margin-bottom: 0.5rem;
-  width: 5rem;
-  height: 5rem;
-  overflow: hidden;
-}
-@media (min-width: 768px) {
-  .services .services-container .service-item .service-header .service-logo {
-    margin: 1rem auto;
-  }
-}
-.services .services-container .service-item .service-header .service-logo img {
-  width: 100%;
-}
-.services .services-container .service-item .service-header .service-title {
-  font-family: "Taviraj", serif;
-}
-.services .services-container .service-item .service-header .service-title h2 {
-  text-transform: capitalize;
-  font-size: 1.5rem;
-  line-height: 1.2;
-  margin: 1rem 0 0;
-}
-.services .services-container .service-item .service-header .service-title p {
-  color: #485563;
-}
-.services .services-container .service-item .service-content .service-description {
-  margin: 1rem 0;
+.section-flex-container h2 {
   font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 500;
-  color: #fff;
-  background: #29323c;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  height: auto;
+  text-transform: capitalize;
+  opacity: 0.8;
 }
 @media (min-width: 768px) {
-  .services .services-container .service-item .service-content .service-description {
-    height: 20vh;
-    display: grid;
-    place-items: center;
+  .section-flex-container h2 {
+    font-size: 1.5rem;
   }
 }
-@media (min-width: 1024px) {
-  .services .services-container .service-item .service-content .service-description {
-    height: 15vh;
-  }
+.section-flex-container ul {
+  margin: 1rem 0;
 }
-.services .services-container .service-item .service-content ol {
-  margin: 0.5rem;
-  padding: 0 0.5rem;
-  text-align: left;
+.section-flex-container ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
 }
-.services .services-container .service-item .service-content ol li {
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-}
-.services .services-container .service-item .service-content ol li::marker {
-  color: #000a;
-}
-.services .services-container .service-item .service-content ol li h3 {
-  text-transform: capitalize;
-  margin-bottom: 0.25em;
-  font-size: 1.05rem;
-}
-.services .services-container .service-item .service-content ol li p {
-  margin-bottom: 0.25rem;
-  line-height: 1.5;
-}
-.services .services-container .service-item .service-content ol li p::first-letter {
-  text-transform: capitalize;
-}
-.services .services-container .service-item .service-content ol li p::after {
-  content: ".";
-}
-.services .services-container .service-item .service-content ol li p span {
-  font-weight: 500;
-}
-.services .services-container .service-item .service-content ol li p a {
-  color: inherit;
-}
-.services .services-container .service-item.io-item .service-logo {
-  transform: translateX(1rem);
-  opacity: 0;
-  transition: 1s;
-}
-.services .services-container .service-item.io-item .service-title h2 {
-  opacity: 0;
-  transform: translateX(1rem);
-  transition: 1s;
-  transition-delay: 0.5s;
-}
-.services .services-container .service-item.io-item .service-title p {
-  transform: translateX(1.25rem);
-  opacity: 0;
-  transition: 1s;
-  transition-delay: 0.8s;
-}
-.services .services-container .service-item.io-item .service-content p {
-  opacity: 0;
-  transition: 1.5s;
-  transition-delay: 1s;
-}
-.services .services-container .service-item.io-item .service-content ol li {
-  transform: translateX(1.5rem);
-  opacity: 0;
-}
-.services .services-container .service-item.active-item .service-logo {
-  transform: translateX(0);
-  opacity: 1;
-}
-.services .services-container .service-item.active-item .service-title h2 {
-  opacity: 1;
-  transform: translateX(0);
-}
-.services .services-container .service-item.active-item .service-title p {
-  transform: translateX(0);
-  opacity: 1;
-}
-.services .services-container .service-item.active-item .service-content p {
-  opacity: 1;
-  transform: translateX(0);
-}
-.services .services-container .service-item.active-item .service-content ol li {
-  transform: translateX(0);
-  opacity: 1;
-  transition: 1s;
-  transition-delay: calc(1s + .25s * var(--i));
+.section-flex-container ul li p span {
+  color: #000;
+  padding-right: 0.5rem;
 }
 
 .contact .contact-container {
