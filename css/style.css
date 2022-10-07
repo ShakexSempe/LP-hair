@@ -806,10 +806,10 @@ header.aside-header .logo {
 @keyframes letter-2 {
   0% {
     transform: translateY(-50%) translateX(0);
+    opacity: 0.4;
   }
   80% {
     transform: translateY(-50%) translateX(1.5rem);
-    opacity: 0.4;
   }
   100% {
     transform: translateY(-50%) translateX(1.5rem);
