@@ -1007,38 +1007,62 @@ header.aside-header .logo {
   background-size: 100%, 1em 1em;
 }
 
-.section-flex-container {
-  margin: 7vh 0;
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 768px) {
-  .section-flex-container {
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 5vh 5vw;
-  }
-}
-.section-flex-container h2 {
+section h2 {
   font-size: 1rem;
   text-transform: capitalize;
   opacity: 0.8;
 }
 @media (min-width: 768px) {
-  .section-flex-container h2 {
+  section h2 {
     font-size: 1.5rem;
   }
 }
-.section-flex-container ul {
+section ul {
   margin: 1rem 0;
 }
-.section-flex-container ul li {
+section ul li {
   list-style: none;
   margin-bottom: 0.5rem;
 }
-.section-flex-container ul li p span {
+section ul li p span {
   color: #000;
   padding-right: 0.5rem;
+}
+
+.section-flex-container {
+  margin: 7vh 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .section-flex-container {
+    flex-direction: row;
+    justify-content: center;
+    padding: 5vh 5vw;
+    gap: 5vw;
+    text-align: center;
+  }
+}
+
+.section-grid-container {
+  margin: 5vh 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+@media (min-width: 768px) {
+  .section-grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.group {
+  padding: 0.5rem;
+  transition: 0.25s;
+}
+.group:hover {
+  box-shadow: 0px -2px 1.25rem #000a;
 }
 
 .contact .contact-container {
@@ -1478,10 +1502,10 @@ body a, body span {
   background: linear-gradient(90deg, #fafafa 100%, #fff 0%);
   position: relative;
   border: none;
-  overflow: hidden;
 }
 .container main section .section-title {
-  position: relative;
+  position: sticky;
+  top: 8vh;
 }
 @media (min-width: 768px) {
   .container main section .section-title {
@@ -1496,7 +1520,8 @@ body a, body span {
   font-weight: 600;
   padding: 0 0.5rem;
   width: max-content;
-  transition: 0.5s;
+  transition: 1.5s;
+  transform: translateX(-1rem);
 }
 @media (min-width: 576px) {
   .container main section .section-title h1 {
@@ -1528,7 +1553,7 @@ body a, body span {
   transform: translateY(50%);
 }
 .container main section .section-title.active-title h1 {
-  opacity: 0.6;
+  transform: translateY(0);
 }
 .container main section .section-title.active-title::before {
   transform: translateX(5vw);

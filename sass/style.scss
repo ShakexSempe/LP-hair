@@ -86,11 +86,11 @@ body {
             // border-bottom: .15rem dashed rgba(0, 0, 0, 0.247);
             position: relative;
             border: none;
-            overflow: hidden;
+            // overflow: hidden;
 
             .section-title {
-                position: relative;
-                // top: 8vh;
+                position: sticky;
+                top: 8vh;
                 // overflow: hidden;
 
                 // background: #fff;
@@ -109,7 +109,8 @@ body {
                     padding: 0 .5rem;
                     // width: 7rem;
                     width: max-content;
-                    transition: .5s;
+                    transition: 1.5s;
+                    transform: translateX(-1rem);
                     @include sm {
                         // width: 10rem;
                         font-size: 2rem;
@@ -144,7 +145,8 @@ body {
 
                 &.active-title {
                     h1 {
-                        opacity: .6;
+                        // opacity: .6;
+                        transform: translateY(0);
                     }
 
                     &::before {
