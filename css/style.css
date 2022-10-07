@@ -1587,7 +1587,7 @@ body a, body span {
   font-size: 1.05rem;
   color: #000;
   font-weight: 600;
-  width: max-content;
+  width: 100%;
   transition: 1.5s;
 }
 @media (min-width: 576px) {
