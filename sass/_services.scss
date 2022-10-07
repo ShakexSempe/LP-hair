@@ -76,4 +76,35 @@ section {
             opacity: 1;
         }
     }
+
+    // IO CLASS 
+    &.io-item {
+        h2 {
+            letter-spacing: .05rem;
+            opacity: 0;
+            transition: 1s;
+        }
+        ul {
+            li {
+                transform: translateX(5vw);
+                opacity: 0;
+            }
+        }
+    }
+    // IO CLASS 
+    &.active-item {
+        h2 {
+            letter-spacing: normal;
+            opacity: 1;
+            transition: 1s;
+        }
+        ul {
+            li {
+                transform: translateX(0);
+                opacity: 1;
+                transition: 1s;
+                transition-delay: calc(.25s + .25s * var(--s));
+            }
+        }
+    }
 }

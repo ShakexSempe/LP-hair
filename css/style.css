@@ -1082,6 +1082,26 @@ section ul li p span {
 .group:hover::after {
   opacity: 1;
 }
+.group.io-item h2 {
+  letter-spacing: 0.05rem;
+  opacity: 0;
+  transition: 1s;
+}
+.group.io-item ul li {
+  transform: translateX(5vw);
+  opacity: 0;
+}
+.group.active-item h2 {
+  letter-spacing: normal;
+  opacity: 1;
+  transition: 1s;
+}
+.group.active-item ul li {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 1s;
+  transition-delay: calc(.25s + .25s * var(--s));
+}
 
 .contact .contact-container {
   margin-top: 5vh;
@@ -1539,7 +1559,6 @@ body a, body span {
   padding: 0 0.5rem;
   width: max-content;
   transition: 1.5s;
-  transform: translateX(-1rem);
 }
 @media (min-width: 576px) {
   .container main section .section-title h1 {
@@ -1569,9 +1588,6 @@ body a, body span {
   opacity: 0;
   transition: 1s;
   transform: translateY(50%);
-}
-.container main section .section-title.active-title h1 {
-  transform: translateY(0);
 }
 .container main section .section-title.active-title::before {
   transform: translateX(5vw);
