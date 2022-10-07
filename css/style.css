@@ -123,6 +123,7 @@
     opacity: 1;
     color: #000;
     color: #ead2a1;
+    color: #ff4dff;
   }
 }
 
@@ -770,7 +771,7 @@ header.aside-header .logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #ead2a1;
+  color: #fafafa;
 }
 .hero .banner .slogan .cta a i {
   padding-left: 0.5rem;
