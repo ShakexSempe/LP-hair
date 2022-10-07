@@ -128,7 +128,8 @@ body {
                     right: 0;
                     width: 30vw;
                     height: .15rem;
-                    background: #000;
+                    background:#000;
+                    background: purple;
                     opacity: 0;
                     transition: 1s;
                     transform: translateX(80%);
@@ -141,6 +142,7 @@ body {
                     width: .15rem;
                     height: 35vh;
                     background: #000;
+                    background: purple;
                     opacity: 0;
                     transition: 1s;
                     transform: translateY(50%);
@@ -154,11 +156,13 @@ body {
 
                     &::before {
                     transform: translateX(5vw);
+                    background: #000;
                     opacity: .2;
                     }
                     &::after {
                         transform: translateY(-10vh);
                         opacity: .2;
+                        background: #000;
                         }
                 }
             }

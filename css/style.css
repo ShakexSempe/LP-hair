@@ -1581,6 +1581,7 @@ body a, body span {
   width: 30vw;
   height: 0.15rem;
   background: #000;
+  background: purple;
   opacity: 0;
   transition: 1s;
   transform: translateX(80%);
@@ -1593,6 +1594,7 @@ body a, body span {
   width: 0.15rem;
   height: 35vh;
   background: #000;
+  background: purple;
   opacity: 0;
   transition: 1s;
   transform: translateY(50%);
@@ -1602,11 +1604,13 @@ body a, body span {
 }
 .container main section .section-title.active-title::before {
   transform: translateX(5vw);
+  background: #000;
   opacity: 0.2;
 }
 .container main section .section-title.active-title::after {
   transform: translateY(-10vh);
   opacity: 0.2;
+  background: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
