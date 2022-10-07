@@ -208,17 +208,18 @@
   .footer-nav .item a i {
     font-size: 1rem;
   }
-  .footer-nav .item:hover a {
-    transition: 0.25s;
-  }
+}
+@media (min-width: 820px) {
   .footer-nav .item:hover a i {
     opacity: 1;
-    transition: 0.25s;
+    transition: 0.2s;
   }
 }
-.footer-nav .item:hover a i {
-  opacity: 1;
-  transition: 0.25s;
+@media (max-width: 820px) {
+  .footer-nav .item:active a i {
+    opacity: 1;
+    transition: 0.2s;
+  }
 }
 @media (min-width: 768px) {
   .footer-nav {
