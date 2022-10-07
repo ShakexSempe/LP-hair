@@ -35,6 +35,7 @@ body {
 
 .container {
     // border: 2px solid #fff000;
+    position: relative;
     overflow-x: hidden;
     width: 100%;
     min-height: 200vh;
@@ -88,10 +89,11 @@ body {
             // overflow: hidden;
 
             .section-title {
-                // position: sticky;
+                position: relative;
                 // top: 8vh;
-                // padding: 1rem 0;
+                padding: 1rem;
                 // overflow: hidden;
+                // border: 1px solid red;
 
                 // background: #fff;
                 @include md {
@@ -109,7 +111,7 @@ body {
                     font-weight: 600;
                     padding: 0 .5rem;
                     // width: 7rem;
-                    width: max-content;
+                    // width: max-content;
                     transition: 1.5s;
                     // transform: translateX(-1rem);
                     @include sm {
@@ -129,7 +131,7 @@ body {
                     background: #000;
                     opacity: 0;
                     transition: 1s;
-                    transform: translateX(50%);
+                    transform: translateX(80%);
                 }
                 &::after {
                     content: '';

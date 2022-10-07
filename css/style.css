@@ -1520,6 +1520,7 @@ body a, body span {
 }
 
 .container {
+  position: relative;
   overflow-x: hidden;
   width: 100%;
   min-height: 200vh;
@@ -1549,6 +1550,10 @@ body a, body span {
   position: relative;
   border: none;
 }
+.container main section .section-title {
+  position: relative;
+  padding: 1rem;
+}
 @media (min-width: 768px) {
   .container main section .section-title {
     top: 9vh;
@@ -1561,7 +1566,6 @@ body a, body span {
   color: #000;
   font-weight: 600;
   padding: 0 0.5rem;
-  width: max-content;
   transition: 1.5s;
 }
 @media (min-width: 576px) {
@@ -1579,7 +1583,7 @@ body a, body span {
   background: #000;
   opacity: 0;
   transition: 1s;
-  transform: translateX(50%);
+  transform: translateX(80%);
 }
 .container main section .section-title::after {
   content: "";
