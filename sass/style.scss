@@ -212,6 +212,9 @@ body {
                         font-size: 1.2rem;
                         line-height: 1.6;
                         text-transform: capitalize;
+                        @include md {
+                            font-size: 2rem;
+                        }
                     }
 
                     .cta {
@@ -227,6 +230,9 @@ body {
                 }
                 @include md {
                     color: $text-dark;
+                    // border: 1px solid red;
+                    width: 50%;
+                    margin-top: 20vh;
                 }
             }
         }

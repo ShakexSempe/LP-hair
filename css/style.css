@@ -1676,6 +1676,11 @@ body a, body span {
   line-height: 1.6;
   text-transform: capitalize;
 }
+@media (min-width: 768px) {
+  .container .section-pad.pad-1 .info.info-top p {
+    font-size: 2rem;
+  }
+}
 .container .section-pad.pad-1 .info.info-top .cta {
   margin: 1rem 0 5vh;
 }
@@ -1691,6 +1696,8 @@ body a, body span {
 @media (min-width: 768px) {
   .container .section-pad.pad-1 .info {
     color: #000;
+    width: 50%;
+    margin-top: 20vh;
   }
 }
 
