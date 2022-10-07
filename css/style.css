@@ -620,6 +620,11 @@ header.aside-header .logo {
   place-items: center;
   isolation: isolate;
 }
+@media (min-width: 768px) {
+  .hero .banner {
+    display: block;
+  }
+}
 .hero .banner::after {
   content: "";
   position: absolute;
@@ -637,6 +642,14 @@ header.aside-header .logo {
   z-index: -1;
   opacity: 0.5;
 }
+@media (min-width: 768px) {
+  .hero .banner::after {
+    width: 50%;
+    right: 0;
+    left: unset;
+    opacity: 1;
+  }
+}
 .hero .banner .logo-container {
   width: 100%;
   height: 100%;
@@ -644,6 +657,11 @@ header.aside-header .logo {
   display: grid;
   place-items: center;
   isolation: isolate;
+}
+@media (min-width: 768px) {
+  .hero .banner .logo-container {
+    width: 50%;
+  }
 }
 .hero .banner .logo-container .letter {
   font-size: 10rem;
@@ -715,6 +733,16 @@ header.aside-header .logo {
   position: absolute;
   bottom: 10vh;
   text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  .hero .banner .slogan {
+    left: 15%;
+  }
+}
+@media (min-width: 820px) {
+  .hero .banner .slogan {
+    left: 20%;
+  }
 }
 .hero .banner .slogan h1 {
   background: #fafafa;
