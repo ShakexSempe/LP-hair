@@ -4,9 +4,9 @@
     @include lg {
         display: none;
     }
-    border: 1px solid $toggle;
+    border: 1px solid #0003;
     // border-radius: $border-radius-sm;
-    background: #000;
+    background: $background-secondary;
     // height: auto;
     width: 4rem;
     display: grid;
@@ -20,13 +20,15 @@
         font-size: .85rem;
         font-weight: 500;
         transition: .25s;
-        color: $text-light;
+        color: $text-dark;
     }
     // ACTIVE CLASS
     &.active {
         transform: scale(.95);
+        background: #000;
         .aside-menu {
             letter-spacing: normal;
+            color: $text-light;
         }
     }
 }

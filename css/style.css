@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Taviraj:wght@200;300;500;600;700&display=swap");
 .menu {
-  border: 1px solid #000;
-  background: #000;
+  border: 1px solid #0003;
+  background: linear-gradient(90deg, #fafafa 100%, #fff 0%);
   width: 4rem;
   display: grid;
   place-items: center;
@@ -21,13 +21,15 @@
   font-size: 0.85rem;
   font-weight: 500;
   transition: 0.25s;
-  color: #fafafa;
+  color: #000;
 }
 .menu.active {
   transform: scale(0.95);
+  background: #000;
 }
 .menu.active .aside-menu {
   letter-spacing: normal;
+  color: #fafafa;
 }
 
 .btn {
