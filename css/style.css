@@ -1053,7 +1053,7 @@ section ul li p span {
 }
 
 .section-flex-container {
-  margin: 7vh 0;
+  margin: 10vh 0;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -1069,7 +1069,7 @@ section ul li p span {
 }
 
 .section-grid-container {
-  margin: 5vh 0;
+  margin: 10vh 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
@@ -1584,7 +1584,7 @@ body a, body span {
 .container main section .section-title h1 {
   text-transform: capitalize;
   text-transform: uppercase;
-  font-size: 1.15rem;
+  font-size: 1.125rem;
   color: #000;
   font-weight: 600;
   width: max-content;
@@ -1598,7 +1598,7 @@ body a, body span {
 .container main section .section-title::before {
   content: "";
   position: absolute;
-  top: 7vh;
+  top: 10vh;
   right: 0;
   width: 30vw;
   height: 0.15rem;

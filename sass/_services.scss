@@ -26,7 +26,7 @@ section {
 }
 .section-flex-container {
     // border: 2px solid blue;
-    margin: 7vh 0;
+    margin: 10vh 0;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -41,7 +41,7 @@ section {
 }
 
 .section-grid-container {
-    margin: 5vh 0;
+    margin: 10vh 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: .5rem;
