@@ -91,7 +91,7 @@ body {
             .section-title {
                 position: relative;
                 // top: 8vh;
-                padding: 1rem;
+                padding: 1rem 0;
                 // overflow: hidden;
                 // border: 1px solid red;
 
@@ -105,13 +105,13 @@ body {
                     text-transform: capitalize;
                     text-transform: uppercase;
                     // font-family: $font-title;
-                    font-size: 1.25rem;
+                    font-size: 1.15rem;
                     // font-size: 3rem;
                     color: $text-dark;
                     font-weight: 600;
-                    padding: 0 .5rem;
+                    // padding: 0 .5rem;
                     // width: 7rem;
-                    // width: max-content;
+                    width: max-content;
                     transition: 1.5s;
                     // transform: translateX(-1rem);
                     @include sm {
