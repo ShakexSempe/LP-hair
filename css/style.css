@@ -255,7 +255,7 @@ header {
   top: 0;
   background: #fafafa;
   height: 7vh;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   z-index: 10;
   padding: 0 5vw;
@@ -305,7 +305,8 @@ header aside {
   width: 100%;
   height: 100vh;
   top: 7vh;
-  left: 100vw;
+  left: 0;
+  transform: translateX(100vw);
   overflow: hidden;
   padding: 5vh 0;
   transition: 0.5s;
@@ -445,7 +446,7 @@ header aside .contact-links a i {
   display: block;
 }
 header aside.active {
-  left: 5vw;
+  transform: translateX(5vw);
 }
 header aside.active ul li {
   transform: translateX(0);
@@ -726,12 +727,12 @@ header.aside-header .logo {
   padding: 0.25rem;
   font-family: "Taviraj", serif;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.5;
 }
 .hero .banner .slogan p {
   font-size: 1rem;
-  padding: 0.5rem;
+  padding: 0 0.25rem 0.25em 0.25rem;
   background: #fafafa;
   color: #000;
 }
@@ -1010,7 +1011,6 @@ header.aside-header .logo {
 section h2 {
   font-size: 1rem;
   text-transform: capitalize;
-  opacity: 0.8;
 }
 @media (min-width: 768px) {
   section h2 {
@@ -1224,8 +1224,7 @@ section ul li p span {
   text-transform: capitalize;
   margin-bottom: 0.5rem;
   color: #000;
-  font-weight: 400;
-  font-family: "Taviraj", serif;
+  font-weight: 500;
 }
 .contact .contact-form form label input, .contact .contact-form form label textarea {
   display: block;
@@ -1492,8 +1491,8 @@ html {
 body {
   background: #000;
   width: 100%;
-  position: relative;
   font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 body a, body span {
   color: #fff9;
@@ -1503,7 +1502,6 @@ body a, body span {
   overflow-x: hidden;
   width: 100%;
   min-height: 200vh;
-  position: relative;
 }
 .container::after {
   content: "";
@@ -1530,10 +1528,6 @@ body a, body span {
   position: relative;
   border: none;
 }
-.container main section .section-title {
-  position: sticky;
-  top: 8vh;
-}
 @media (min-width: 768px) {
   .container main section .section-title {
     top: 9vh;
@@ -1541,7 +1535,7 @@ body a, body span {
 }
 .container main section .section-title h1 {
   text-transform: capitalize;
-  font-family: "Taviraj", serif;
+  text-transform: uppercase;
   font-size: 1.25rem;
   color: #000;
   font-weight: 600;
@@ -1577,6 +1571,9 @@ body a, body span {
   opacity: 0;
   transition: 1s;
   transform: translateY(50%);
+}
+.container main section .section-title.active-title h1 {
+  opacity: 0.6;
 }
 .container main section .section-title.active-title::before {
   transform: translateX(5vw);

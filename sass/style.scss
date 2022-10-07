@@ -24,9 +24,9 @@ html {
 body {
     background: $background-primary;
     width: 100%;
-    position: relative;
+    // position: relative;
     font-family: $font-content;
-    // overflow-x: hidden;
+    position: relative;
 
     a, span {
         color: $brand;
@@ -38,7 +38,6 @@ body {
     overflow-x: hidden;
     width: 100%;
     min-height: 200vh;
-    position: relative;
     // SIDEBAR OVERLAY
     &::after {
         content: '';
@@ -89,8 +88,9 @@ body {
             // overflow: hidden;
 
             .section-title {
-                position: sticky;
-                top: 8vh;
+                // position: sticky;
+                // top: 8vh;
+                // padding: 1rem 0;
                 // overflow: hidden;
 
                 // background: #fff;
@@ -101,7 +101,8 @@ body {
                     // border: $border-dark-sm;
                     // border-color: transparent;
                     text-transform: capitalize;
-                    font-family: $font-title;
+                    text-transform: uppercase;
+                    // font-family: $font-title;
                     font-size: 1.25rem;
                     // font-size: 3rem;
                     color: $text-dark;
@@ -145,7 +146,7 @@ body {
 
                 &.active-title {
                     h1 {
-                        // opacity: .6;
+                        opacity: .6;
                         // transform: translateY(0);
                     }
 
