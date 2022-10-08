@@ -172,8 +172,8 @@ body {
     .section-pad {
         // border: 1px solid $brand-purple;
         width: 100%;
-        min-height: 95vh;
-        padding: 5vh 5vw;
+        height: 95vh;
+        padding: 5vh 5vw 0;
         position: relative;
 
         &.pad-1 {
@@ -182,14 +182,14 @@ body {
 
             figure {
                 width: 100%;
-                // height: 70%;
-                height: auto;
+                height: 70%;
+                // height: auto;
                 overflow: hidden;
                 @include md {display:none;}
 
                 img {
                     width: 100%;
-                    height: 100%;
+                    height: auto;
                 }
             }
             @include md {
@@ -210,6 +210,75 @@ body {
                     // border: 1px solid red;
                     p {
                         font-size: 1.2rem;
+                        line-height: 1.6;
+                        text-transform: capitalize;
+                        @include md {
+                            font-size: 2rem;
+                        }
+                    }
+
+                    .cta {
+                        margin: 1rem 0 5vh;
+                        .btn {
+                            width: 13rem;
+                            border: 1px solid #fff;
+                            @include md {
+                                width: 13rem;
+                            }
+                        }
+                    }
+                }
+                @include md {
+                    color: $text-dark;
+                    // border: 1px solid red;
+                    width: 50%;
+                    margin-top: 20vh;
+                }
+            }
+        }
+        &.pad-2 {
+            position: relative;
+            isolation: isolate;
+            background-color: #000a;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url(../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg);
+                background-position: 30%;
+                background-size: cover;
+                mix-blend-mode: overlay;
+                opacity: 1;
+                z-index: -1;
+                @include md {
+                    mix-blend-mode: normal;
+                    background-attachment: fixed;
+                }
+            }
+            @include md {
+                background-image: url('../img/trevor-cole-zMEzuZlmIQY-unsplash.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: contain;
+                background-position: right;
+                background-color: #000;
+            }
+
+            .info {
+                // opacity: .9;
+                display: block;
+                width: 100%;
+                position: relative;
+                top: 5vh;
+                &.info-top {
+                    // border: 1px solid red;
+                    p {
+                        font-size: 1.2rem;
+                        color: yellow;
+                        color: $text-light;
                         line-height: 1.6;
                         text-transform: capitalize;
                         @include md {
