@@ -1123,7 +1123,7 @@ section ul li p span {
   transform: translateX(0);
   opacity: 1;
   transition: 1s;
-  transition-delay: calc(.25s + .25s * var(--s));
+  transition-delay: 0.25s;
 }
 
 .contact .contact-container {
