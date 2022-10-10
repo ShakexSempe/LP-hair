@@ -647,10 +647,13 @@ header.aside-header .logo {
 }
 @media (min-width: 768px) {
   .hero .banner::after {
-    width: 50%;
+    width: 100%;
     right: 0;
     left: unset;
     opacity: 1;
+    background-attachment: fixed;
+    background-position: 90%;
+    background-size: contain;
   }
 }
 .hero .banner .logo-container {
@@ -1138,7 +1141,7 @@ section ul li p span {
   .contact .contact-container {
     margin-top: 10vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
 }
 .contact .contact-container .contact-item {
